@@ -2,7 +2,7 @@ var krbb = {
     root: 'https://fish-ball.github.io/krbb-plugins/upload-photo'
 };
 
-// ÏÈ°Ñ jQuery Ìæ»»µô
+// å…ˆæŠŠ jQuery æ›¿æ¢æ‰
 $('body').append('<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>');
 
 var jqLoaded = setInterval(function() {
@@ -17,7 +17,7 @@ var jqLoaded = setInterval(function() {
 var main = function() {
 
     // -----------------------------------
-    //              ¿âÒıÈë
+    //              åº“å¼•å…¥
     // -----------------------------------
 
     $.watch = function(fnCase) {
@@ -39,14 +39,14 @@ var main = function() {
     var getFileURL = function(file) {
         var URL = window.URL || window.webkitURL;
         if(!URL) {
-            alert('ÄãµÄä¯ÀÀÆ÷²»Ö§³Ö¿Í»§¶ËÍ¼Æ¬´¦Àí£¡');
+            alert('ä½ çš„æµè§ˆå™¨ä¸æ”¯æŒå®¢æˆ·ç«¯å›¾ç‰‡å¤„ç†ï¼');
             return false;
         }
         return imgURL = URL.createObjectURL(file);
     };
 
     // -----------------------------------
-    //              Ö´ĞĞ½Å±¾
+    //              æ‰§è¡Œè„šæœ¬
     // -----------------------------------
 
     var galleries = [];
@@ -57,7 +57,7 @@ var main = function() {
         return $.ajaxFormData;
     }).then(function() {
         //menuonclick('BookList','2206768');
-        OpenWinUpload('ÉÏ´«Í¼Æ¬','Í¼Æ¬',{menuid:2206768,cateid:0,type:2});
+        OpenWinUpload('ä¸Šä¼ å›¾ç‰‡','å›¾ç‰‡',{menuid:2206768,cateid:0,type:2});
         return $.watch(function() {
             return $(document.frame1.document).find('#xc_sel').children().length;
         });
@@ -67,16 +67,16 @@ var main = function() {
         });
         $('head').append('<link rel="stylesheet" type="text/css" href="'+krbb.root+'/style.css" />');
         $body.html(
-            '<h1 id="site-title">Ó×½ÌÍ¨Í¼Æ¬ÉÏ´«ÔöÇ¿²å¼ş v0.1.0</h1>' +
+            '<h1 id="site-title">å¹¼æ•™é€šå›¾ç‰‡ä¸Šä¼ å¢å¼ºæ’ä»¶ v0.1.0</h1>' +
             '<nav id="menu">' +
-            '    <label>Ñ¡ÔñÏà²á£º</label>' +
+            '    <label>é€‰æ‹©ç›¸å†Œï¼š</label>' +
             '    <select id="gallery"></select>' +
-            '    <a href="javascript:$(\'#fileUpload\').click();">Ñ¡ÔñÍ¼Æ¬</a>' +
+            '    <a href="javascript:$(\'#fileUpload\').click();">é€‰æ‹©å›¾ç‰‡</a>' +
             '    <input id="fileUpload" style="display: none;" type="file" name="images" multiple accept="image/*" />' +
             '</nav>' +
             '<section>' +
             '    <ul id="images"></ul>' +
-            '    <div><a id="submit" href="javascript:;">ÉÏ´«</a></div>' +
+            '    <div><a id="submit" href="javascript:;">ä¸Šä¼ </a></div>' +
             '</section>'
         );
         $.each(galleries, function() {
@@ -114,7 +114,7 @@ var main = function() {
                     url: '/newwebsite/manage/js/uploadify3.2/Upload.ashx',
                     xhr: function() {
                         var xhr = $.ajaxSettings.xhr();
-                        //°ó¶¨ÉÏ´«½ø¶ÈµÄ»Øµ÷º¯Êı
+                        //ç»‘å®šä¸Šä¼ è¿›åº¦çš„å›è°ƒå‡½æ•°
                         xhr.upload.addEventListener('progress', function(evt) {
                             if (evt.lengthComputable) {
                                 var percentComplete = evt.loaded / evt.total;
