@@ -1,9 +1,9 @@
 var krbb = {
-    root: 'https://raw.githubusercontent.com/fish-ball/krbb-plugins/master/upload-photo'
+    root: 'https://fish-ball.github.io/krbb-plugins/upload-photo'
 };
 
 // ÏÈ°Ñ jQuery Ìæ»»µô
-$('body').append('<script src="https://fish-ball.github.io/krbb-plugins/upload-photo/script.js"></script>');
+$('body').append('<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>');
 
 var jqLoaded = setInterval(function() {
     var version = jQuery.fn.jquery;
