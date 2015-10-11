@@ -1,0 +1,90 @@
+html {
+  background: #F0F0F0;
+}
+body {
+  margin: 20px auto;
+  width: 800px;
+  padding: 20px;
+  background: white;
+  border: 1px solid #CCC;
+  font-size: 14px!important;
+}
+#site-title {
+  line-height: 36px;
+  font-size: 18px;
+  text-align: center;
+}
+#menu {
+  margin: 15px 0;
+  padding: 8px;
+  background: #F5F5F5;
+  border: 1px solid #CCC;
+}
+#menu a {
+  color: white;
+  background: #3879D9;
+  font-size: 12px;
+  padding: 2px 4px;
+  margin: 0 10px;
+}
+#menu a:hover {
+  text-decoration: none;
+}
+#images::after,
+#images::before {
+  content: "";
+  display: block;
+  height: 1px;
+  clear: both;
+}
+#images li {
+  float: left;
+  margin: 0 10px 10px 0;
+  position: relative;
+}
+#images li a {
+  display: block;
+  width: 120px;
+  height: 120px;
+  border: 1px solid #CCC;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background: 50% 50% no-repeat;
+  background-size: cover;
+}
+#images li #progress h2 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  line-height: 120px;
+  background: rgba(0, 0, 0, 0.5);
+  font-size: 36px;
+  color: white;
+  text-align: center;
+  font-weight: normal;
+}
+#images li #progress p {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: right;
+  padding: 3px;
+  color: white;
+  font-size: 12px;
+}
+#submit {
+  display: block;
+  margin: 20px auto;
+  width: 120px;
+  text-align: center;
+  color: white;
+  background: #3879D9;
+  font-size: 16px;
+  line-height: 36px;
+  border-radius: 18px;
+}
+#submit:hover {
+  text-decoration: none;
+}
