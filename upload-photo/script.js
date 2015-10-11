@@ -1,9 +1,9 @@
 var krbb = {
-    root: 'http://krbb.huangwenchao.com.cn/upload-photo'
+    root: 'https://raw.githubusercontent.com/fish-ball/krbb-plugins/master/upload-photo'
 };
 
 // ÏÈ°Ñ jQuery Ìæ»»µô
-$('body').append('<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>');
+$('body').append('<script src="https://raw.githubusercontent.com/fish-ball/krbb-plugins/master/upload-photo/script.js"></script>');
 
 var jqLoaded = setInterval(function() {
     var version = jQuery.fn.jquery;

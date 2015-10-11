@@ -4,7 +4,7 @@ krbb-plugins - 幼教通(krbb.cn)的暗黑插件
 ### 使用方法：
 
 ```
-javascript:$('body').append('<script src="http://krbb.huangwenchao.com.cn/upload-photo/script.js"></script>');
+javascript:$('body').append('<script src="https://raw.githubusercontent.com/fish-ball/krbb-plugins/master/upload-photo/script.js"></script>');
 ```
 
 将此链接放入收藏夹，然后登录幼教通后台（<http://www.krbb.cn/newwebsite/manage/index.aspx>）。
