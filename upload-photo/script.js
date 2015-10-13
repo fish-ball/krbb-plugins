@@ -65,7 +65,12 @@ var main = function() {
             return $.trim($(this).text()) == '上传图片';
         }).click();
         return $.watch(function() {
-            return $(document.frame1.document).find('#xc_sel').children().length;
+            try {
+                return $(document.frame1.document).find('#xc_sel').children().length;
+            } catch(e) {
+                return false;
+            }
+
         });
     }).then(function() {
         $(document.frame1.document).find('#xc_sel').children().each(function() {
