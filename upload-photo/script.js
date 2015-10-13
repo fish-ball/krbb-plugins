@@ -20,15 +20,17 @@ var main = function() {
     //              库引入
     // -----------------------------------
 
-    $.watch = function(fnCase) {
+    $.watch = function(fnCase, delay, retry) {
+        retry = retry || 200; // 默认重试次数
         return $.Deferred(function(dfd) {
+            if(retry-- < 0) dfd.reject();
             var itv = setInterval(function() {
                 var obj = fnCase();
                 if(obj) {
                     clearInterval(itv);
                     dfd.resolve(obj);
                 }
-            }, 50);
+            }, delay || 50);
         }).promise();
     };
 
@@ -56,8 +58,12 @@ var main = function() {
     $.watch(function() {
         return $.ajaxFormData;
     }).then(function() {
-        //menuonclick('BookList','2206768');
-        OpenWinUpload('上传图片','图片',{menuid:2206768,cateid:0,type:2});
+        $body.find('a').filter(function() {
+            return $.trim($(this).text()) == '班级相册';
+        }).click();
+        $body.find('a').filter(function() {
+            return $.trim($(this).text()) == '上传图片';
+        }).click();
         return $.watch(function() {
             return $(document.frame1.document).find('#xc_sel').children().length;
         });
