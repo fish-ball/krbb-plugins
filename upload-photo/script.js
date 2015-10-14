@@ -56,9 +56,8 @@ var main = function() {
     $.watch(function() {
         return $.ajaxFormData;
     }).then(function() {
-        //menuonclick('BookList','2206768');
-        OpenWinUpload('上传图片','图片',{menuid:228927,cateid:0,type:2});
-
+        var result = /"javascript:menuonclick\('BookList','(\d+)'\);"/.exec($('#NavigateMenu').html());
+        OpenWinUpload('上传图片','图片',{menuid:parseInt(result[1]),cateid:0,type:2});
         return $.watch(function() {
             return $(document.frame1.document).find('#xc_sel').children().length;
         });
