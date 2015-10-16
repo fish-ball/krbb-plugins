@@ -67,7 +67,7 @@ var main = function() {
         });
         $('head').append('<link rel="stylesheet" type="text/css" href="'+krbb.root+'/style.css" />');
         $body.html(
-            '<h1 id="site-title">幼教通图片上传增强插件 v0.1.0</h1>' +
+            '<h1 id="site-title">幼教通图片上传增强插件 v0.1.1</h1>' +
             '<nav id="menu">' +
             '    <label>选择相册：</label>' +
             '    <select id="gallery"></select>' +
