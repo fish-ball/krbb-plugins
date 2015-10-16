@@ -67,7 +67,7 @@ var main = function() {
         });
         $('head').append('<link rel="stylesheet" type="text/css" href="'+krbb.root+'/style.css" />');
         $body.html(
-            '<h1 id="site-title">幼教通图片上传增强插件 v0.1.1</h1>' +
+            '<h1 id="site-title">幼教通图片上传增强插件 v0.1.2</h1>' +
             '<nav id="menu">' +
             '    <label>选择相册：</label>' +
             '    <select id="gallery"></select>' +
@@ -104,7 +104,7 @@ var main = function() {
             else return sz/1e9+ 'GB';
         };
         var doUpload = function() {
-            $('.hideOnProgress').toggle(files.length > 0);
+            $('.hideOnProgress').toggle(!files.length);
             if(files.length == 0) {return;}
             var file = files.shift();
             return $.getJSON('http://www.krbb.cn/NewWebSite/Manage/js/uploadify3.2/getcode.ashx?OperateType=1&time='+Math.random()).then(function(obj) {
