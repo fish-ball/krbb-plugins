@@ -107,6 +107,7 @@ var main = function() {
             $('.hideOnProgress').toggle(!files.length);
             if(files.length == 0) {return;}
             var file = files.shift();
+            // TODO: 上传之前还是对图片进行裁剪为妙，发现后台其实是会粗暴地将图片宽度缩放为 1000
             return $.getJSON('http://www.krbb.cn/NewWebSite/Manage/js/uploadify3.2/getcode.ashx?OperateType=1&time='+Math.random()).then(function(obj) {
                 var code = obj.code;
                 var gallery_id = $('#gallery').val();
