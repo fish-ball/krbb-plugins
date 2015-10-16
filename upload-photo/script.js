@@ -71,12 +71,12 @@ var main = function() {
             '<nav id="menu">' +
             '    <label>选择相册：</label>' +
             '    <select id="gallery"></select>' +
-            '    <a href="javascript:$(\'#fileUpload\').click();">选择图片</a>' +
+            '    <a class="hideOnProgress" href="javascript:$(\'#fileUpload\').click();">选择图片</a>' +
             '    <input id="fileUpload" style="display: none;" type="file" name="images" multiple accept="image/*" />' +
             '</nav>' +
             '<section>' +
             '    <ul id="images"></ul>' +
-            '    <div><a id="submit" href="javascript:;">上传</a></div>' +
+            '    <div><a id="submit" href="javascript:;" class="hideOnProgress">上传</a></div>' +
             '</section>'
         );
         $.each(galleries, function() {
@@ -85,6 +85,7 @@ var main = function() {
         var $images = $('#images');
         var $upload = $('#fileUpload').change(function() {
             files = [];
+            $images.html('');
             $.each($upload[0].files, function() {
                 files.push(this);
                 $images.append(
@@ -103,7 +104,8 @@ var main = function() {
             else return sz/1e9+ 'GB';
         };
         var doUpload = function() {
-            if(files.length == 0) return;
+            $('.hideOnProgress').toggle(files.length > 0);
+            if(files.length == 0) {return;}
             var file = files.shift();
             return $.getJSON('http://www.krbb.cn/NewWebSite/Manage/js/uploadify3.2/getcode.ashx?OperateType=1&time='+Math.random()).then(function(obj) {
                 var code = obj.code;
