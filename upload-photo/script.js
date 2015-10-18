@@ -3,12 +3,12 @@ var krbb = {
 };
 
 // 先把 jQuery 替换掉
-$('body').append('<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>');
+$('body').append('<script src="https://fish-ball.github.io/krbb-plugins/lib/jquery-2.1.4.min.js"></script>');
 
 var jqLoaded = setInterval(function() {
     var version = jQuery.fn.jquery;
     console.log(version);
-    if(version == '2.0.0') {
+    if(version[0] == '2') {
         clearInterval(jqLoaded);
         main();
     }
@@ -67,7 +67,7 @@ var main = function() {
         });
         $('head').append('<link rel="stylesheet" type="text/css" href="'+krbb.root+'/style.css" />');
         $body.html(
-            '<h1 id="site-title">幼教通图片上传增强插件 v0.1.2</h1>' +
+            '<h1 id="site-title">幼教通图片上传增强插件 v0.1.3</h1>' +
             '<nav id="menu">' +
             '    <label>选择相册：</label>' +
             '    <select id="gallery"></select>' +
