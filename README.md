@@ -44,6 +44,48 @@ javascript:$('body').append('<script src="https://fish-ball.github.io/krbb-plugi
 
 ![step2](http://fish-ball.github.io/krbb-plugins/images/step4.jpg)
 
+登录进去之后，点击右上角的**网站管理**
+
+![step2](http://fish-ball.github.io/krbb-plugins/images/step5.jpg)
+
+再次提醒一下，一定要使用极速模式，不能使用兼容模式。
+
+![step2](http://fish-ball.github.io/krbb-plugins/images/step6.jpg)
+
+OK，在这个界面上面，点击我们刚才加入的那个收藏夹标签即可启动插件，注意点一下就好，不要重复点，点完等一下。
+
+![step2](http://fish-ball.github.io/krbb-plugins/images/step7.jpg)
+
+### 第三步，使用插件
+
+插件开启之后就是这个样子，先选择需要上传到那个相册，然后点击选择图片。
+
+老师们可以提前将这次要上传的整批图片放在同一个文件夹下面，然后再点上传。
+
+这里上传是不限制数量的，所以一下全选即可。
+
+![step3](http://fish-ball.github.io/krbb-plugins/images/step8.jpg)
+
+点了之后就会打开一个选择图片对话框，全选之后点打开即可。
+
+![step3](http://fish-ball.github.io/krbb-plugins/images/step9.jpg)
+
+刚才选中的那些图片立即就会显示在这里预览到，确认无误后点击下面的上传按钮即可。
+
+![step3](http://fish-ball.github.io/krbb-plugins/images/step10.jpg)
+
+上传过程中会显示进度，其实很快就会完成。
+
+![step3](http://fish-ball.github.io/krbb-plugins/images/step11.jpg)
+
+传完之后，点击 F5 就可以返回管理后台，事实上在插件界面刷新页面都可以返回。
+
+![step3](http://fish-ball.github.io/krbb-plugins/images/step12.jpg)
+
+回去之后可以看到在相册里面就显示有刚才上传的那些图片啦！
+
+
+
 
 ---
 
