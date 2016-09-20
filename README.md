@@ -24,17 +24,26 @@ javascript:$('body').append('<script src="https://fish-ball.github.io/krbb-plugi
 
 #### 1.2. 在收藏夹里面新建标签
 
-![step1](http://fish-ball.github.io/krbb-plugins/images/step1.jpg "右键点击标签栏，选择添加网页")
+![step1](http://fish-ball.github.io/krbb-plugins/images/step1.jpg)
+
+右键点击标签栏，选择添加网页
 
 视乎浏览器的不同，上述操作菜单的文字可能有所差异，但其实都是一样的。
 
-![step1](http://fish-ball.github.io/krbb-plugins/images/step2.jpg "定义标签名称，然后将刚才复制的脚本粘贴进去")
+![step1](http://fish-ball.github.io/krbb-plugins/images/step2.jpg)
 
+定义标签名称，并且将刚才复制的脚本粘贴进去
 
+确认之后，在收藏栏就会多出来一个标签，以后会用得上。
 
+![step1](http://fish-ball.github.io/krbb-plugins/images/step3.jpg)
 
+### 第二步，登录幼教通后台
 
-将此链接放入收藏夹，然后登录幼教通后台（<http://www.krbb.cn/newwebsite/manage/index.aspx>）。
+登录幼教通后台，<http://www.krbb.cn/newwebsite/manage/index.aspx>，老师或者家长的账号都可以使用这个插件。
+
+![step2](http://fish-ball.github.io/krbb-plugins/images/step4.jpg)
+
 
 ---
 
